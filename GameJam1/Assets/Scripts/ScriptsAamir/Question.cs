@@ -29,6 +29,14 @@ public class Question : MonoBehaviour
             else if ((c == '\n') || (c == '\r')) // enter/return
             {
                 print("User answered " + gt.text);
+                if (gt.text == "snow")
+                {
+                    print("Correct!");
+                }
+                else
+                {
+                    print("Incorrect");
+                }
                 gt.text = "";
             }
             else
